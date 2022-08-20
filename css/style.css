@@ -9,14 +9,16 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  margin: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 280px;
 }
 
 .keys {
@@ -25,7 +27,7 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .drum {
@@ -33,11 +35,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  width: 100px;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 5px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 2.7;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.drum h4 {
+  font-size: 20px;
+  color: black;
+}
+.drum span {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBRUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNESjs7QURLQTtFQUNJLDJJQUFBO0VBQ0EsMkJBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7QUNGSjs7QURJQTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FDREo7O0FER0E7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxTQUFBO0FDQUo7O0FER0E7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSwwQ0FBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtBQ0FKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+.clicked {
+  transform: scale(1.1);
+  border: solid 3px rgb(231, 201, 21);
+  box-shadow: 0px 1px 33px 10px rgb(231, 201, 21);
+}
+
+.title {
+  margin-top: 100px;
+}
+.title h1 {
+  font-family: "Rubik Dirt", cursive;
+  color: whitesmoke;
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBRUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNESjs7QURLQTtFQUNJLDJJQUFBO0VBQ0EsMkJBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7RUFDQSxTQUFBO0FDRko7O0FESUE7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxZQUFBO0VBQ0EsMkJBQUE7RUFDQSxtQkFBQTtFQUNBLFVBQUE7QUNESjs7QURHQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLFNBQUE7QUNBSjs7QURHQTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDBDQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxzRUFBQTtBQ0FKO0FEQ0k7RUFDSSxlQUFBO0VBQ0EsWUFBQTtBQ0NSO0FERUk7RUFDSSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSx5QkFBQTtBQ0FSOztBREdBO0VBQ0kscUJBQUE7RUFDQSxtQ0FBQTtFQUNBLCtDQUFBO0FDQUo7O0FERUE7RUFDSSxpQkFBQTtBQ0NKO0FEQUk7RUFDSSxrQ0FBQTtFQUNBLGlCQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FDRVIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
